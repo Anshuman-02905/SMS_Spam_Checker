@@ -18,10 +18,12 @@ def decompress_pickle(file):
     return data
 
 model=decompress_pickle('model.pbz2')
+vectorizer=decompress_pickle('vectorizer.pbz2')
+
 #model=pickle.load(open('model.pkl', 'rb'))
 #vectorizer=pickle.load(open('vectorizer.pkl', 'rb'))
 
-vectorizer=pickle.load(open('vectorizer.pkl','rb'))
+#vectorizer=pickle.load(open('vectorizer.pkl','rb'))
 
 def transform_text(text):
     text=text.lower()
